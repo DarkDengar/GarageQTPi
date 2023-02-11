@@ -20,7 +20,7 @@ class Config(object):
         location2 = os.path.join(os.path.abspath(os.path.dirname(__file__)),"config.yaml") # look in script directory
         if os.path.exists(location1):
             self.file = location1
-        elif os-path.exists(location2):
+        elif os.path.exists(location2):
             self.file = location2
         else:
             raise FileNotFoundError(errno.EOENT, os.strerror(errno.ENOENT), location1 + " or " + location2) 
